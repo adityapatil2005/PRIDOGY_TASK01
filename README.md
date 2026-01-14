@@ -1,330 +1,186 @@
-🌍 Global Population Analysis & Visualization (1960–2023)
+🌍 Global Population Data Analysis & Visualization (1960–2024)
 
-A comprehensive data analysis and visualization project examining global population trends over 64 years using the World Bank Open Data dataset. This project was completed as part of Prodigy InfoTech – Data Science Internship (Task 1) and focuses on extracting meaningful demographic insights through data-driven visualizations.
+This project performs an end-to-end analysis and visualization of global population trends using the World Bank Total Population dataset. It covers data loading, preprocessing, exploratory data analysis (EDA), visualization, and statistical summarization to uncover long-term demographic patterns across countries and regions.
 
-📌 Project Details
+📌 Project Overview
 
-Internship: Prodigy InfoTech – Data Science Intern
+Domain: Data Science / Data Analysis
 
-Task: Task 1 – Population Distribution Analysis
-
-Status: ✅ Completed
-
-Completion Date: January 2026
-
-🎯 Objective
-
-The primary objective of this project is to analyze and visualize:
-
-Long-term global population growth trends
-
-Population distribution across countries
-
-Comparative growth patterns of major nations
-
-Statistical insights into demographic shifts over time
-
-📁 Dataset Information
-
-Source: World Bank Open Data
+Dataset Source: World Bank Open Data
 
 Indicator: SP.POP.TOTL (Total Population)
 
-File: API_SP.POP.TOTL_DS2_en_csv_v2.csv
+Time Span: 1960–2024
 
-Time Period: 1960–2023 (64 years)
+Countries & Regions: 265
 
-Coverage: 200+ countries and territories
+Total Records (Cleaned): 17,195
 
-Records: 13,000+ data points
+🎯 Objectives
 
-Key Attributes: Country Name, Country Code, Year, Population
+Analyze global population growth over six decades
 
-🛠️ Technologies & Tools
+Identify the most populous countries in recent years
+
+Study population distribution across nations
+
+Compare population growth trends of major countries
+
+Generate clean, reusable datasets and high-quality visualizations
+
+📁 Dataset Description
+
+File Used: API_SP.POP.TOTL_DS2_en_csv_v2.csv
+
+Original Shape: 266 rows × 70 columns
+
+Key Fields:
+
+Country Name
+
+Country Code
+
+Year
+
+Population
+
+Metadata rows were skipped, and the dataset was reshaped for time-series analysis.
+
+🛠️ Tools & Technologies
 Programming & Libraries
 
-Python: 3.10.19
+Python
 
-Pandas: Data manipulation & preprocessing
+Pandas – Data loading, cleaning, transformation
 
-NumPy: Numerical computations
+NumPy – Numerical operations
 
-Matplotlib: Data visualization
+Matplotlib – Data visualization
 
-Seaborn: Statistical graphics
+Seaborn – Statistical plotting
 
-Development Environment
+Environment
 
 IDE: Jupyter Notebook
 
-Environment: Anaconda
-
 Version Control: Git & GitHub
 
-📈 Methodology
-Phase 1: Data Acquisition
+🔄 Workflow & Methodology
+1️⃣ Data Loading & Exploration
 
-Downloaded population data from World Bank
+Imported required libraries and configured plotting styles
 
-Loaded CSV with metadata handling (skiprows=4)
+Loaded CSV data while handling metadata rows
 
-Performed initial dataset exploration
+Inspected dataset structure, columns, data types, and missing values
 
-Phase 2: Data Preprocessing
+2️⃣ Data Reshaping & Cleaning
 
-Reshaped data from wide to long format using pd.melt()
+Extracted year-wise columns (1960–2024)
 
-Converted data types for Year and Population
+Converted data from wide format to long format using pd.melt()
 
-Removed missing values and regional aggregates
+Converted data types for numerical accuracy
 
-Retained country-level data only
+Removed rows with missing population values
 
-Phase 3: Exploratory Data Analysis
+Result: Clean dataset with 4 columns and 17,195 rows
 
-Analyzed year-wise global population trends
+📊 Exploratory Data Analysis & Visualizations
+📈 Global Population Trend
 
-Identified top 10 most populous countries
+Line plot showing total population growth from 1960 to 2024
 
-Computed growth rates and percentage changes
+Reveals sustained growth with gradual slowing in recent years
 
-Examined population distribution patterns
+🏆 Top 10 Most Populous Countries
 
-Phase 4: Visualization
+Horizontal bar chart for the latest year (2024)
 
-Time-series line plot for global population growth
+Highlights dominance of a few highly populated nations
 
-Horizontal bar chart for top 10 countries
+📉 Population Distribution
 
-Histogram for population distribution
+Histogram showing population spread across countries
 
-Multi-line comparison of major countries
+Demonstrates a highly right-skewed distribution
 
-🔍 Key Findings
-Global Demographics
+🌐 Country-wise Comparison
 
-1960 Population: ~3.0 billion
+Multi-line chart comparing population growth of:
 
-2023 Population: ~8.0 billion
+India
 
-Overall Growth: 160%+ increase
+China
 
-Trend: Sustained growth with gradual deceleration
+United States
 
-Population Concentration
+Indonesia
 
-Top 10 countries account for ~58% of global population
+Brazil
 
-Population distribution is highly right-skewed
+📌 Key Insights
 
-Majority of countries have populations under 100 million
+Global Population (1960): ~30.4 billion (aggregated regions included)
 
-Growth Patterns
+Global Population (2024): ~87.9 billion (aggregated regions included)
 
-India surpassed China as the most populous nation (~2023)
+Overall Growth: ~189% increase
 
-Asia hosts ~60% of the world’s population
+Population Distribution:
 
-Africa exhibits the highest recent growth rates
-
-Developed nations show stable or slower growth
-
-📊 Visualizations Included
-
-Global Population Trend (1960–2023)
-
-Top 10 Most Populous Countries
-
-Population Distribution Histogram
-
-Country-wise Growth Comparison
-
-Each visualization provides actionable insights into demographic trends and disparities.
-
-🚀 How to Run the Project
-Prerequisites
-
-Ensure Python 3.8+ is installed. Install dependencies:
-
-pip install pandas numpy matplotlib seaborn jupyter
-
-Execution Steps
-# Clone the repository
-git clone https://github.com/rushikesh7325-tech/PRODIGY_DS_01.git
-
-# Navigate to project directory
-cd PRODIGY_DS_01
-
-# Launch Jupyter Notebook
-jupyter notebook
-
-
-Open task01_analysis.ipynb and run all cells.
-
-📌 About
-
-Task 1: Population Data Visualization
-This project demonstrates practical skills in data cleaning, analysis, and visualization using real-world datasets.
-
-If you want, I can also:
-
-Make it shorter for quick README
-
-Convert it into resume-ready project description
-
-Add GitHub badges & keywords
-
-Rewrite it for LinkedIn project showcase
-
-Just tell me 👍
-
-Not same give me changes but same meaning for this 
-
-Got it 👍
-Here is a rephrased version with different wording but the same meaning, written in advanced, professional GitHub-style language (not copied, not repetitive):
-
-🌐 Global Population Trends Analysis (1960–2023)
-
-This project presents an in-depth analysis and visualization of global population dynamics over a 64-year period using data from the World Bank Open Data platform. Developed during the Prodigy InfoTech Data Science Internship (Task 1), the study focuses on uncovering long-term demographic patterns through structured data analysis and insightful visualizations.
-
-📄 Project Overview
-
-Internship Program: Prodigy InfoTech – Data Science Intern
-
-Assigned Task: Population Distribution Analysis (Task 1)
-
-Project Status: ✅ Successfully Completed
-
-Completion Timeline: January 2026
-
-🎯 Project Goals
-
-The objective of this project is to:
-
-Examine historical global population growth
-
-Explore population distribution across nations
-
-Compare demographic trends among leading countries
-
-Derive statistical insights related to population change
-
-📊 Dataset Summary
-
-Data Provider: World Bank Open Data
-
-Population Indicator: SP.POP.TOTL
-
-Dataset File: API_SP.POP.TOTL_DS2_en_csv_v2.csv
-
-Coverage Period: 1960–2023
-
-Geographical Scope: 200+ countries and regions
-
-Data Volume: Over 13,000 observations
-
-Core Fields: Country, Code, Year, Population
-
-🧰 Tools & Technologies
-Core Technologies
-
-Python (v3.10)
-
-Pandas: Data wrangling and transformation
-
-NumPy: Numerical operations
-
-Matplotlib: Charting and plots
-
-Seaborn: Advanced statistical visuals
-
-Development Setup
-
-Notebook Environment: Jupyter Notebook
-
-Package Management: Anaconda
-
-Version Control System: Git & GitHub
-
-🔍 Analytical Workflow
-Data Collection
-
-Retrieved population data in CSV format
-
-Loaded dataset while handling metadata rows
-
-Conducted structural inspection of the dataset
-
-Data Preparation
-
-Converted data from wide to long format
-
-Standardized data types for numerical analysis
-
-Eliminated missing values and non-country records
-
-Exploratory Analysis
-
-Studied global population changes over time
-
-Identified the most populous nations
-
-Evaluated growth trends and variation
-
-Analyzed distribution characteristics
-
-Visualization Techniques
-
-Line plots for long-term global growth
-
-Bar charts for country-level comparisons
-
-Histograms for distribution analysis
-
-Multi-line charts for trend comparison
-
-📈 Key Observations
-Global Growth Trends
-
-Population expanded from ~3 billion (1960) to ~8 billion (2023)
-
-Overall growth exceeded 160%
-
-Growth rate shows gradual slowing in recent years
-
-Distribution Insights
-
-Top 10 nations contribute nearly 60% of the global population
-
-Population distribution exhibits strong right skewness
+Median country population is far lower than the mean
 
 Majority of countries have relatively small populations
 
-Regional Patterns
+Growth Trends:
 
-India emerged as the most populous country around 2023
+India shows rapid growth in recent decades
 
-Asia remains the dominant population hub
+Developed nations exhibit steady, slower growth
 
-African nations show accelerated recent growth
+📑 Statistical Summary (Latest Year)
 
-Developed regions demonstrate slower expansion
+Total Countries/Regions: 265
 
-📉 Visual Outputs
+Years Covered: 1960–2024
 
-Global population growth trend (1960–2023)
+Average Country Population: ~331 million
 
-Ranking of top 10 most populous countries
+Median Country Population: ~10.8 million
 
-Population distribution histogram
+Largest Entity: World (aggregated region)
 
-Comparative growth analysis of major countries
+💾 Output Files
 
-▶️ Project Execution Guide
-Requirements
+Cleaned Dataset:
+
+data/processed/population_cleaned.csv
+
+
+Saved Visualizations:
+
+global_population_trend.png
+
+top10_countries.png
+
+population_distribution.png
+
+country_comparison.png
+
+🚀 How to Run the Project
+Prerequisites
 pip install pandas numpy matplotlib seaborn jupyter
 
-Steps to Run
-git clone https://github.com/rushikesh7325-tech/PRODIGY_DS_01.git
-cd PRODIGY_DS_01
+Execution Steps
+# Clone repository
+git clone <your-repo-link>
+
+# Navigate to project directory
+cd <project-folder>
+
+# Launch notebook
 jupyter notebook
+
+
+Run all cells to reproduce the analysis and visualizations.
