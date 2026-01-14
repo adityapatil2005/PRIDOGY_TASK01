@@ -176,5 +176,5 @@ population_distribution.png
 
 country_comparison.png
 
-Github respository - https://github.com/adityapatil2005/PRIDOGY_TASK01/edit/main
+Github respository - https://github.com/adityapatil2005/PRIDOGY_TASK01/tree/main
 
