@@ -92,18 +92,24 @@ Result: Clean dataset with 4 columns and 17,195 rows
 Line plot showing total population growth from 1960 to 2024
 
 Reveals sustained growth with gradual slowing in recent years
+<img width="3661" height="1648" alt="global_population_trend" src="https://github.com/user-attachments/assets/71968721-8c5f-4039-9490-09f1d1d39d3a" />
+
 
 🏆 Top 10 Most Populous Countries
 
 Horizontal bar chart for the latest year (2024)
 
 Highlights dominance of a few highly populated nations
+<img width="3458" height="2110" alt="top10_countries" src="https://github.com/user-attachments/assets/450cd820-738f-4acb-901b-9b79cf2a49d4" />
+
 
 📉 Population Distribution
 
 Histogram showing population spread across countries
 
 Demonstrates a highly right-skewed distribution
+<img width="3011" height="1648" alt="population_distribution" src="https://github.com/user-attachments/assets/36d6df06-68f1-4a98-b1e0-5e3262aa01de" />
+
 
 🌐 Country-wise Comparison
 
@@ -118,6 +124,8 @@ United States
 Indonesia
 
 Brazil
+<img width="3638" height="1879" alt="country_comparison" src="https://github.com/user-attachments/assets/9717cf19-dbdb-4ade-8640-24762294f176" />
+
 
 📌 Key Insights
 
