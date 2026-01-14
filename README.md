@@ -176,19 +176,5 @@ population_distribution.png
 
 country_comparison.png
 
-🚀 How to Run the Project
-Prerequisites
-pip install pandas numpy matplotlib seaborn jupyter
+Github respository - https://github.com/adityapatil2005/PRIDOGY_TASK01/edit/main
 
-Execution Steps
-# Clone repository
-git clone <your-repo-link>
-
-# Navigate to project directory
-cd <project-folder>
-
-# Launch notebook
-jupyter notebook
-
-
-Run all cells to reproduce the analysis and visualizations.
